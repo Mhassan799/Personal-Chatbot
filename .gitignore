@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/resume.html
 /.pnp
 .pnp.*
 .yarn/*

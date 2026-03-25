@@ -224,6 +224,8 @@ export async function POST(request) {
         4. If the answer is not in the context, politely say that you don't have this information in the user's language.
         `;
 
+        // its a prompt
+
         console.log('prompt',prompt)
 
         const response = await ai.models.generateContent({
