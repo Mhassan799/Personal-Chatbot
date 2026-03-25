@@ -37,11 +37,11 @@ export default function Chatbot() {
             if (data.answer) {
                 setMessages((prev) => [...prev, { role: 'assistant', content: data.answer }]);
             } else {
-                setMessages((prev) => [...prev, { role: 'assistant', content: 'Maaf kijiyega, kuch masla hua hai.' }]);
+                setMessages((prev) => [...prev, { role: 'assistant', content: 'Sorry for interuption there is a problem' }]);
             }
         } catch (error) {
             console.error("Chat Error:", error);
-            setMessages((prev) => [...prev, { role: 'assistant', content: 'Server se connect nahi ho pa raha.' }]);
+            setMessages((prev) => [...prev, { role: 'assistant', content: 'Server is disconnected.' }]);
         } finally {
             setIsLoading(false);
         }
